@@ -15,7 +15,7 @@
  */
 
 * {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 400;
   padding: 0;
   margin: 0;
@@ -29,11 +29,11 @@
 }
 
 .nav-text span {
-  color: #6ace22
+  color: #6ace22;
 }
 
 .nav-text h3 {
-  color: #e1e1e1
+  color: #e1e1e1;
 }
 
 .nav {
@@ -103,7 +103,6 @@
   width: 5%;
 }
 
-
 .bold {
   font-weight: 600;
 }
@@ -115,7 +114,6 @@
 
 .add-new-cat button {
   outline: none;
-  background: none;
   border: none;
   border: 2px solid #5fb523;
   background: #5fb523;
@@ -144,7 +142,7 @@
 }
 
 .transaction-info .calender-section {
-  display: flex;  
+  display: flex;
   align-items: center;
 }
 
@@ -154,12 +152,10 @@
 
 .transaction-info-placeholder {
   padding-top: 8px;
-  display: flex;  
+  display: flex;
   justify-content: space-between;
 }
 
 .transaction-card-holder .transaction-info-placeholder .bold {
   font-size: 14px;
 }
-
-
