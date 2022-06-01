@@ -112,15 +112,14 @@
   margin: 0 auto;
 }
 
-.add-new-cat button {
-  outline: none;
-  border: none;
+.add-new-cat a {
+  text-decoration: none;
+  color: #fff;
   border: 2px solid #5fb523;
   background: #5fb523;
-  padding: 10px 20px;
-  color: #fff;
   border-radius: 2px;
   font-weight: 100;
+  padding: 12px 30px;
 }
 
 /* --------- Show Page -------- */
