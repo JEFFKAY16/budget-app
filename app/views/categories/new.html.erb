@@ -4,6 +4,13 @@
     <%= f.label :name %>
     <%= f.text_field :name, placeholder: 'Enter Full Name' %>
     <br>
+    <br>
+    <div class="field">
+      <%= f.label :icon %>
+      <br>
+      <%= f.file_field :icon, placeholder: "Icon", class: "form-control stuff" , required: true%>
+    </div>
+    <br>
     <%= f.submit('Add Category') %>
   <%end%>
 </div>
