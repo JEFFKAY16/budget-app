@@ -7,65 +7,23 @@
   </div>
 </div>
 <div class="cat-cards">
-  <div class="card-holder">
-    <div class="img-placeholder">
-      <%= image_tag('5.png', :alt => 'menu', :width => '55px', :height => '55px') %>
-    </div>
-    <div class="info-placeholder">
-      <div class="info-top">
-        <p>Uber Taxi Transport</p>
-        <p class="bold">$28.50</p>
-      </div>
-      <div class="info-bottom">
-        <p>12 April 2014</p>
-      </div>
-    </div>
-  </div>
 
-  <div class="card-holder">
-    <div class="img-placeholder">
-      <%= image_tag('5.png', :alt => 'menu', :width => '55px', :height => '55px') %>
-    </div>
-    <div class="info-placeholder">
-      <div class="info-top">
-        <p>Uber Taxi Transport</p>
-        <p class="bold">$28.50</p>
+  <% @categories.each do |category| %>
+    <div class="card-holder">
+      <div class="img-placeholder">
+        <%= image_tag('5.png', :alt => 'menu', :width => '55px', :height => '55px') %>
       </div>
-      <div class="info-bottom">
-        <p>12 April 2014</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="card-holder">
-    <div class="img-placeholder">
-      <%= image_tag('5.png', :alt => 'menu', :width => '55px', :height => '55px') %>
-    </div>
-    <div class="info-placeholder">
-      <div class="info-top">
-        <p>Uber Taxi Transport</p>
-        <p class="bold">$28.50</p>
-      </div>
-      <div class="info-bottom">
-        <p>12 April 2014</p>
+      <div class="info-placeholder">
+        <div class="info-top">
+          <p><%= category.name %></p>
+          <p class="bold">$200</p>
+        </div>
+        <div class="info-bottom">
+          <p><%= category.created_at.to_date %></p>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="card-holder">
-    <div class="img-placeholder">
-      <%= image_tag('5.png', :alt => 'menu', :width => '55px', :height => '55px') %>
-    </div>
-    <div class="info-placeholder">
-      <div class="info-top">
-        <p>Uber Taxi Transport</p>
-        <p class="bold">$28.50</p>
-      </div>
-      <div class="info-bottom">
-        <p>12 April 2014</p>
-      </div>
-    </div>
-  </div>
+  <% end %>
 
 </div>
 

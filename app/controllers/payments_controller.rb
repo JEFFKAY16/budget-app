@@ -1,3 +1,5 @@
 class PaymentsController < ApplicationController
-  def index; end
+  def index
+    @payments = Payment.order('id ASC')
+  end
 end

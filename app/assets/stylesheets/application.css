@@ -136,6 +136,10 @@
   margin-bottom: 15px;
 }
 
+.time {
+  font-size: 14px;
+}
+
 .transaction-info {
   border-bottom: 2px solid rgb(231, 231, 231);
   padding-bottom: 8px;
