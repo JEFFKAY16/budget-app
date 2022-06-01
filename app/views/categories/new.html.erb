@@ -1,0 +1,9 @@
+<div class="new-category">
+  <h1>New Category</h1>
+  <%= form_with model: @category, url: categories_path do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name, placeholder: 'Enter Full Name' %>
+    <br>
+    <%= f.submit('Add Category') %>
+  <%end%>
+</div>

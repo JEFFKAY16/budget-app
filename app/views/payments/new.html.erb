@@ -1,0 +1,22 @@
+<div class="new-payment">
+  <h1>New Payment</h1>
+  <%= form_with model: @payment, url: category_payments_path do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name, placeholder: 'Enter Full Name' %>
+    <br>
+    <br>
+    <%= f.label :amount %>
+    <%= f.text_field :amount, placeholder: 'Enter Amount' %>
+    <br>
+    <br>
+    <%= f.label :category %>
+    <%= f.collection_check_boxes :category_ids, Category.where(author_id: 1), :id, :name do |cat| %>
+      <div class="checkbox-div" >
+        <%= cat.check_box %>
+        <%= cat.label %><br>
+      </div>
+    <% end %>
+    <br>
+    <%= f.submit('Add Payment') %>
+  <%end%>
+</div>

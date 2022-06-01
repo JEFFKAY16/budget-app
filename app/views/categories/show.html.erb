@@ -11,22 +11,22 @@
 </div>
 <div class="cat-cards">
   <% @category.recent_payments.each do |payment| %>
-    <div class="transaction-card-holder">
-      <div class="transaction-info">
-        <h4><%= payment.name %></h4>
-        <div class="calender-section">
-          <%= image_tag('calender.png', :alt => 'menu', :width => '20px', :height => '20px') %>
-          <p class="time"><%= payment.created_at.to_date %> at <%= payment.created_at.strftime("%I:%M %P") %></p>
+      <div class="transaction-card-holder">
+        <div class="transaction-info">
+          <h4><%= payment.name %></h4>
+          <div class="calender-section">
+            <%= image_tag('calender.png', :alt => 'menu', :width => '20px', :height => '20px') %>
+            <p class="time"><%= payment.created_at.to_date %> at <%= payment.created_at.strftime("%I:%M %P") %></p>
+          </div>
+        </div>
+        <div class="transaction-info-placeholder">
+          <p>Total Payment</p>
+          <p class="bold">$<%= payment.amount %></p>
         </div>
       </div>
-      <div class="transaction-info-placeholder">
-        <p>Total Payment</p>
-        <p class="bold">$<%= payment.amount %></p>
-      </div>
-    </div>
   <% end %>
 </div>
 
 <div class="add-new-cat">
-  <%= button_to "Add New Transaction", categories_path %>
+  <%= link_to "Add Payment", new_category_payment_path(@category), class: 'new-category-link' %>
 </div>

@@ -4,6 +4,6 @@ class Category < ApplicationRecord
   has_many :payments, through: :category_payments
 
   def recent_payments
-    Payment.order('id ASC')
+    payments.order('id ASC')
   end
 end
