@@ -13,3 +13,153 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: rgb(231, 231, 231);
+  width: 100%;
+  height: 100vh;
+}
+
+.nav-text span {
+  color: #6ace22
+}
+
+.nav-text h3 {
+  color: #e1e1e1
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  background: #3778c2;
+  color: #fff;
+  padding: 10px;
+}
+
+.cat-name-section {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10px;
+  font-weight: 500;
+}
+
+.cat-name-section h5 {
+  color: #434b54;
+}
+
+.cat-cards {
+  padding: 20px;
+}
+
+.cat-cards .card-holder {
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+
+.card-holder .img-placeholder {
+  width: 20%;
+}
+
+.card-holder .info-placeholder {
+  width: 80%;
+}
+
+.card-holder .info-placeholder .info-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  padding-bottom: 5px;
+}
+
+.card-holder .info-placeholder .info-bottom {
+  padding-top: 5px;
+  color: #434b54;
+}
+
+.card-holder .info-placeholder .info-top:first-child {
+  width: 95%;
+  color: #434b54;
+}
+
+.card-holder .info-placeholder .info-top:last-child {
+  width: 5%;
+}
+
+
+.bold {
+  font-weight: 600;
+}
+
+.add-new-cat {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.add-new-cat button {
+  outline: none;
+  background: none;
+  border: none;
+  border: 2px solid #5fb523;
+  background: #5fb523;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 2px;
+  font-weight: 100;
+}
+
+/* --------- Show Page -------- */
+
+.transaction-card-holder {
+  background-color: #fff;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+  line-height: 25px;
+  color: rgb(102, 101, 101);
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+
+.transaction-info {
+  border-bottom: 2px solid rgb(231, 231, 231);
+  padding-bottom: 8px;
+}
+
+.transaction-info .calender-section {
+  display: flex;  
+  align-items: center;
+}
+
+.transaction-info .calender-section img {
+  margin-right: 7px;
+}
+
+.transaction-info-placeholder {
+  padding-top: 8px;
+  display: flex;  
+  justify-content: space-between;
+}
+
+.transaction-card-holder .transaction-info-placeholder .bold {
+  font-size: 14px;
+}
+
+

@@ -11,6 +11,21 @@
   </head>
 
   <body>
-    <%= yield %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <div class="container">
+      <div class="nav menu">
+        <div class="menu">
+          <%= image_tag('menu-icon.png', :alt => 'menu', :width => '35px', :height => '35px') %>
+        </div>
+        <div class="nav-text">
+          <h3>Budget<span>App</span></h3>
+        </div>
+        <div class="nav-link">
+          <p>Login</p>
+        </div>
+      </div>
+      <%= yield %>
+    </div>
   </body>
 </html>

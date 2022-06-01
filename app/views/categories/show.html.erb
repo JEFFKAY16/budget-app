@@ -1,0 +1,46 @@
+<div class="cat-name-section">
+  <div class="cat-name">
+    <h5>Back</h5>
+  </div>
+  <div class="cat-name">
+    <h5>Transportation</h5>
+  </div>
+  <div class="cat-price">
+    <h5 class="bold">$100.00</h5>
+  </div>
+</div>
+<div class="cat-cards">
+
+  <div class="transaction-card-holder">
+    <div class="transaction-info">
+      <h4>Ulendo Taxi Services</h4>
+      <div class="calender-section">
+        <%= image_tag('calender.png', :alt => 'menu', :width => '20px', :height => '20px') %>
+        <p>13 April 2014 at 13:00 pm</p>
+      </div>
+    </div>
+    <div class="transaction-info-placeholder">
+      <p>Total Payment</p>
+      <p class="bold">$17.00</p>
+    </div>
+  </div>
+
+  <div class="transaction-card-holder">
+    <div class="transaction-info">
+      <h4>Ulendo Taxi Services</h4>
+      <div class="calender-section">
+        <%= image_tag('calender.png', :alt => 'menu', :width => '20px', :height => '20px') %>
+        <p>13 April 2014 at 13:00 pm</p>
+      </div>
+    </div>
+    <div class="info-placeholder">
+      <p>Total Payment</p>
+      <p class="bold">$17.00</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="add-new-cat">
+  <%= button_to "Add New Transaction", categories_path %>
+</div>
