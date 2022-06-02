@@ -204,9 +204,9 @@ form input {
 
 form input[type=submit] {
   background-color: #3778c2;
-  color:rgb(231, 231, 231);
+  color: rgb(231, 231, 231);
   font-weight: 500;
-} 
+}
 
 /* -------- Payment Form ------- */
 
@@ -234,6 +234,6 @@ form input[type=submit] {
 
 .new-payment form input[type=submit] {
   background-color: #3778c2;
-  color:rgb(231, 231, 231);
+  color: rgb(231, 231, 231);
   font-weight: 500;
 }
