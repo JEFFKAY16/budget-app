@@ -31,6 +31,13 @@ a {
   color: #fff;
 }
 
+.nav-link button {
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
 .container {
   background-color: rgb(231, 231, 231);
   width: 100%;
