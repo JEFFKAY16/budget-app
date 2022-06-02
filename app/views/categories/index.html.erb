@@ -3,25 +3,30 @@
     <h5>Monthly Budget</h5>
   </div>
   <div class="cat-price">
+    <h5>Signed in as <%= @user.name %></h5>
   </div>
 </div>
 <div class="cat-cards">
 
   <% @categories.each do |category| %>
-    <div class="card-holder">
-      <div class="img-placeholder">
-        <%= image_tag(category.icon, :alt => 'menu', :width => '55px', :height => '55px') %>
-      </div>
-      <div class="info-placeholder">
-        <div class="info-top">
-          <p><%= category.name %></p>
-          <p class="bold">$<%= category.payments.reduce(0) { |sum, item| sum + item.amount } %></p>
+    <%= link_to category_path(category.id) do %>
+
+      <div class="card-holder">
+        <div class="img-placeholder">
+          <%= image_tag(category.icon, :alt => 'menu', :width => '55px', :height => '55px') %>
         </div>
-        <div class="info-bottom">
-          <p><%= category.created_at.to_date %></p>
+        <div class="info-placeholder">
+          <div class="info-top">
+            <p><%= category.name %></p>
+            <p class="bold">$<%= category.payments.reduce(0) { |sum, item| sum + item.amount } %></p>
+          </div>
+          <div class="info-bottom">
+            <p><%= category.created_at.to_date %></p>
+          </div>
         </div>
       </div>
-    </div>
+
+    <% end %>
   <% end %>
 
 </div>

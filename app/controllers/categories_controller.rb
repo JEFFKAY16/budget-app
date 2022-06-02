@@ -1,6 +1,7 @@
 class CategoriesController < ApplicationController
   def index
     @categories = Category.order('id ASC')
+    @user = current_user
   end
 
   def show

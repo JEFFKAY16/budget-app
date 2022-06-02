@@ -8,9 +8,10 @@ class PaymentsController < ApplicationController
   end
 
   def create
+    @category = current_category
     @payment = current_user.payments.new(payment_params)
     if @payment.save
-      redirect_to root_path
+      redirect_to category_path(@category)
       flash[:success] = 'Payment has been successfully added.'
     else
       render :new

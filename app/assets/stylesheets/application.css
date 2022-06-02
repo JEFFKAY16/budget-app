@@ -22,6 +22,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 .container {
   background-color: rgb(231, 231, 231);
   width: 100%;
@@ -52,6 +57,12 @@
   justify-content: space-between;
   padding: 30px 10px;
   font-weight: 500;
+}
+
+.cat-name-section .cat-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .cat-name-section h5 {
@@ -161,4 +172,68 @@
 
 .transaction-card-holder .transaction-info-placeholder .bold {
   font-size: 14px;
+}
+
+/* -------- styles forms -------- */
+
+.new-category {
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 3px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.new-category h2 {
+  text-align: center;
+  font-weight: 500;
+}
+
+form input {
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  padding: 20px 0;
+  outline: none;
+}
+
+form input[type=submit] {
+  background-color: #3778c2;
+  color:rgb(231, 231, 231);
+  font-weight: 500;
+} 
+
+/* -------- Payment Form ------- */
+
+.new-payment {
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 3px;
+  width: 90%;
+  text-align: center;
+}
+
+.new-payment h2 {
+  text-align: left;
+  font-weight: 500;
+}
+
+.new-payment form input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  padding: 20px 0;
+  outline: none;
+}
+
+.new-payment form input[type=submit] {
+  background-color: #3778c2;
+  color:rgb(231, 231, 231);
+  font-weight: 500;
 }
