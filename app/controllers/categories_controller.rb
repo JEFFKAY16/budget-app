@@ -1,6 +1,6 @@
 class CategoriesController < ApplicationController
   def index
-    @categories = Category.order('id ASC')
+    @categories = Category.where(author_id: current_user.id).order('id ASC')
     @user = current_user
   end
 
@@ -16,7 +16,7 @@ class CategoriesController < ApplicationController
     user = current_user
     @category = user.categories.new(category_params)
     if @category.save
-      redirect_to root_path
+      redirect_to categories_path
       flash[:success] = 'Category has been successfully added.'
     else
       render :new
