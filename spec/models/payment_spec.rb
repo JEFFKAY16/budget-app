@@ -10,7 +10,7 @@ RSpec.describe Category, type: :model do
     context 'when valid' do
       it { expect(payment).to be_valid }
     end
-    
+
     it 'should valid name ' do
       payment.name = nil
       expect(payment).to_not be_valid
