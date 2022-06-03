@@ -5,8 +5,8 @@
 ## Video Description By Developer
 [Demo Video](https://www.loom.com/share/0812b02d73744cb29b3b1f4e754a7614)
 
-## Deployment
-[![Deployed on heroku](https://img.shields.io/badge/Deployed-Heroku-blueviolet)](https://fathomless-tundra-27272.herokuapp.com/)
+## Live Version
+[View The Deployed Version](https://sheltered-reaches-04488.herokuapp.com/)
 
 ## Built With
 
