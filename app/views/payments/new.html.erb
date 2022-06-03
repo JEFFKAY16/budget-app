@@ -1,0 +1,20 @@
+<div class="new-payment">
+  <h1>New Payment</h1><br>
+  <h5><%= link_to "<< Go Back", category_path(@category) %></h5>
+  <%= form_with model: @payment, url: category_payments_path do |f| %>
+    <%= f.text_field :name, placeholder: 'Enter Full Name' %>
+    <br>
+    <br>
+    <%= f.text_field :amount, placeholder: 'Enter Amount' %>
+    <br>
+    <br>
+    <%= f.collection_check_boxes :category_ids, Category.where(author_id: 1), :id, :name do |cat| %>
+      <div class="checkbox-div" >
+        <%= cat.check_box %>
+        <%= cat.label %>
+      </div>
+    <% end %>
+    <br>
+    <%= f.submit('Add Payment') %>
+  <%end%>
+</div>

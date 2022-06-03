@@ -7,10 +7,30 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
   </head>
 
   <body>
-    <%= yield %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <div class="container">
+      <div class="nav menu">
+        <div class="menu">
+          <%= image_tag('menu-icon.png', :alt => 'menu', :width => '35px', :height => '35px') %>
+        </div>
+        <div class="nav-text">
+          <h3>Budget<span>App</span></h3>
+        </div>
+        <% if user_signed_in? %>
+          <div class="nav-link">
+            <p><%= button_to "Sign Out", destroy_user_session_path, method: :delete %></p>
+          </div>
+        <% else %>
+          <div class="nav-link">
+          <p><%= link_to "Sign in", new_user_session_path %></p>
+        </div>
+        <% end %>
+      </div>
+      <%= yield %>
+    </div>
   </body>
 </html>
