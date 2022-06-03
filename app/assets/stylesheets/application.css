@@ -260,7 +260,6 @@ a {
   flex-direction: column;
 }
 
-
 .button-space {
   display: flex;
   flex-direction: column;
@@ -284,8 +283,7 @@ a {
   font-weight: 500;
 }
 
-
-/*-------- Devise Forms -------- */
+/* -------- Devise Forms -------- */
 
 .login-page {
   background-color: #fff;
@@ -307,7 +305,6 @@ a {
   outline: none;
   padding: 10px 0;
 }
-
 
 .login-page .login-btn {
   background-color: #5fb523;
@@ -340,7 +337,6 @@ a {
   outline: none;
   padding: 10px 0;
 }
-
 
 .signup-page .signup-btn {
   background-color: #3778c2;
