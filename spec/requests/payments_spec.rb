@@ -12,9 +12,5 @@ RSpec.describe 'Category', type: :request do
       sign_in user
       get new_category_payment_path(category)
     end
-
-    it 'respons to html' do
-      expect(response.content_type).to include 'text/html'
-    end
   end
 end

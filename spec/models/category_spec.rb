@@ -1,22 +1,26 @@
 require 'rails_helper'
 
-RSpec.describe Category, type: :model do
-  let(:user) { User.create(name: 'Jeff', email: 'jeff@mail.com', password: 'railsrails') }
-  let(:category) { Category.create(name: 'Shopping', icon: 'https://i.imgur.com/Ar3Lf3Dt.png', author_id: user.id) }
+RSpec.feature Category, type: :model do
+  background do
+    @user = User.create!(name: 'Jake', email: 'jake@mail.com', password: 'jake123')
 
-  describe 'Validations' do
-    context 'when valid' do
-      it { expect(category).to be_valid }
-    end
+    @category = @user.categories.create!(name: 'Musica')
 
-    it 'should allow valid name' do
-      category.name = 'Jeff'
-      expect(category).to be_valid
-    end
+    @category.icon.attach(
+      io: File.open(Rails.root.join('spec', 'pics', '2.png')),
+      filename: '2.png',
+      content_type: 'application/png'
+    )
+    @category.save!
+  end
 
-    it 'should allow valid author_id' do
-      category.author_id = nil
-      expect(category).to_not be_valid
-    end
+  it 'should be valid' do
+    expect(@category).to be_valid
+  end
+
+  it 'should have a name and an icon' do
+    @category.name = ''
+
+    expect(@category).to_not be_valid
   end
 end

@@ -1,6 +1,6 @@
 class CategoriesController < ApplicationController
   def index
-    @categories = Category.where(author_id: current_user.id).order('id ASC')
+    @categories = Category.where(author_id: current_user.id).order('id DESC')
     @user = current_user
   end
 

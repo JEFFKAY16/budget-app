@@ -4,7 +4,9 @@ class Category < ApplicationRecord
   has_many :payments, through: :category_payments
   has_one_attached :icon
 
+  validates :name, presence: true, length: { maximum: 250 }
+
   def recent_payments
-    payments.order('id ASC')
+    payments.order('id DESC')
   end
 end
