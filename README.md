@@ -2,6 +2,8 @@
 
 > This Ruby on Rails capstone project is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
+## Deployment
+[![Deployed on heroku](https://img.shields.io/badge/Deployed-Heroku-blueviolet)]()
 
 ## Built With
 
