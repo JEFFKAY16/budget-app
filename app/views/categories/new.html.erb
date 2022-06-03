@@ -1,5 +1,6 @@
 <div class="new-category">
-  <h2>New Category</h2>
+  <h2>New Category</h2><br>
+  <h5><%= link_to "<< Go Back", categories_path %></h5>
   <%= form_with model: @category, url: categories_path do |f| %>
     <%= f.text_field :name, placeholder: 'Enter Full Name' %>
     <br>

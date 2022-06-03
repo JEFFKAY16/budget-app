@@ -5,6 +5,7 @@ class PaymentsController < ApplicationController
 
   def new
     @payment = Payment.new
+    @category = current_category
   end
 
   def create

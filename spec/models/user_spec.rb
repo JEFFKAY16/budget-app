@@ -16,7 +16,9 @@ RSpec.describe User, type: :model do
     expect(subject).to be_valid
   end
 
-  it 'should return role user' do
-    expect(subject.role).to eq 'user'
+  it 'should valid the name' do
+    subject.email = 'jeff@mail.com'
+    expect(subject).to be_valid
   end
+
 end

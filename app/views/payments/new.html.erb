@@ -1,5 +1,6 @@
 <div class="new-payment">
-  <h1>New Payment</h1>
+  <h1>New Payment</h1><br>
+  <h5><%= link_to "<< Go Back", category_path(@category) %></h5>
   <%= form_with model: @payment, url: category_payments_path do |f| %>
     <%= f.text_field :name, placeholder: 'Enter Full Name' %>
     <br>
